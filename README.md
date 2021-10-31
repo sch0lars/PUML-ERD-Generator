@@ -19,7 +19,7 @@ If, for example, you want to create a relationship between PROFESSOR and COURSE,
 |-----|-----|-----|-----|
 PROFESSOR|[1:1]|[1:M]|COURSE
 
-Table worksheets have two columns, *Attribute* and *Key*. A key can be either *PRIMARY* or *FOREIGN* (must be capitalized). ***Primary and foriegn keys should be place first before any other attribute***. *Key* also supports the keyword *REQUIRED*, which will bold an attribute. Subclasses can be denoted by placing the superclass within parentheses when naming the class e.g., **PROFESSOR (FACULTY)** indicates that *PROFESSOR* is a subclass of *FACULTY*. 
+Table worksheets have two columns, *Attribute* and *Key*. A key can be either *PRIMARY* or *FOREIGN* (must be capitalized). ***Primary and foriegn keys should be placed first before any other attributes***. *Key* also supports the keyword *REQUIRED*, which will bold an attribute. Subclasses can be denoted by placing the superclass within parentheses when naming the class e.g., **PROFESSOR (FACULTY)** indicates that *PROFESSOR* is a subclass of *FACULTY*. 
 
 It is important that the XLSX file is correctly formatted in order for the PUML file to be successfully generated. 
 
