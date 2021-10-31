@@ -74,7 +74,11 @@ skinparam linetype ortho
 
         return relationship_str
 
-    def generate(self):
+    def generate(self) -> None:
+        '''
+        Generates the PUML file
+        :return: None
+        '''
         out_file = 'ERD.puml'
         print(f'[*] Generating {out_file}...')
         with open(out_file, 'w') as file:
