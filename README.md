@@ -6,6 +6,16 @@ This program will take a formatted Excel workbook and generate a PlantUML file, 
 Usage: `main.py <table-relationships.xlsx>`
 
 The workbook should have a separate worksheet for each table (named after the table) and a worksheet called *relationships* as the last table, which will denote the relationships between the tables.
+
+For example, an EMPLOYEE table worksheet may resemble the following:
+|Attrubute|Key|
+|-----|-----|
+|EMPLOYEE_ID|PRIMARY|
+|FIRST_NAME|REQUIRED|
+|MIDDILE_INITIAL||
+|LAST_NAME|REQUIRED|
+|TITLE|REQUIRED|
+
 The *relationships* table uses the following relationship notation:
 |Relationship|Format|
 |-----|-----|
