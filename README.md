@@ -3,6 +3,8 @@ Generate PUML files for ER diagrams using an Excel file
 
 This program will take a formatted Excel workbook and generate a PlantUML file, which can then be generated into an entity-relationship diagram.
 
+Usage: `main.py <table-relationships.xlsx>`
+
 The workbook should have a separate worksheet for each table (named after the table) and a worksheet called *relationships* as the last table, which will denote the relationships between the tables.
 The *relationships* table uses the following relationship notation:
 |Relationship|Format|
@@ -25,3 +27,4 @@ A few rules:
 1. Worksheet names should be named after tables and capitalized e.g. **STUDENT**.
 2. The "relationships" worksheet should be placed ***last*** in the workbook and *should not* be capitalized i.e. **relationships**.
 3. Each table worksheet should have the first row with an *Attribute* and *Key* cell, in that order and with that capitalization (title format).
+4. The name of the workbook does not matter.
