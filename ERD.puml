@@ -1,0 +1,44 @@
+@startuml
+' hide the spot
+ hide circle
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+' Create the entities
+entity "STUDENT" as student {
+	* STUDENT_ID <<PK>>
+	--
+	* FIRST_NAME
+	* LAST_NAME
+	* MAJOR
+}
+
+entity "COURSE" as course {
+	* COURSE_ID <<PK>>
+	--
+	* TITLE
+	* SUBJECT
+	* CREDITS
+	* START_DATE
+	* END_DATE
+}
+
+entity "FACULTY" as faculty {
+	* FACULTY_ID <<PK>>
+	--
+	* FIRST_NAME
+	* LAST_NAME
+	* TITLE
+}
+
+entity "PROFESSOR" as professor extends faculty {
+	* FACULTY_ID <<PK>>
+	--
+	SPECIALTY
+}
+
+' Create the relationships
+student }|--|{ course
+professor ||--|{ course
+@enduml
